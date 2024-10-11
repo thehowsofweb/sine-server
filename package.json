@@ -1,0 +1,17 @@
+{
+  "name": "node-sqlite",
+  "scripts": {
+    "dev": "imba -w server.imba",
+    "build": "imba build server.imba",
+    "preview": "node dist/server.js",
+    "prod": "npx pm2 start dist/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "imba": "^2.0.0-alpha.237"
+  }
+}
